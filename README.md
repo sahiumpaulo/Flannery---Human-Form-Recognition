@@ -1,4 +1,4 @@
-# Flannery - Human-Form-Recognition
+# Flannery - Human Form Recognition
 Repository detailing the data architecture used for the Human Form Recognition data.
 
 ## Context description
@@ -14,3 +14,22 @@ After extensive discussions, it was decided that this project will create value 
 
 ## Data architecture
 
+
+- No need for encryption of the data at the point of ingestion
+
+## Tools and services
+- Azure Data Factory (ADF)
+  ADF is used for 
+- Github
+
+## Challenges
+
+
+## Results
+After extensive discussions, it was decided that this project will create value when:
+1. A list of incursions is available, displaying time, coordinates, severity and channel (camera).
+2. A video of each incursion is available upon request.
+3. Each person is only able to access their respective data.
+
+
+CHECK TPD FEEDBACK
