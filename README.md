@@ -18,12 +18,16 @@ After extensive discussions, it was decided that this project will create value 
 - No need for encryption of the data at the point of ingestion
 
 ## Tools and services
-- Azure Data Factory (ADF)
-  ADF is used for 
+- Azure Data Factory (ADF) for ingesting batch API data daily.
 - Github
+- Azure Synapse Analytics for processing data.
+  - Latitude/Longitude transformation - When GPS data is not available the returned value is 0, which does not reflect a real coordinate. Therefore it needs to be replaced for a NULL value.
+  - Channel transformation - Only one HFR provider has this detail and a blank column needs to be created for the other.
+  - Latitude/Longitude filtering - Some incidents happen at the depot/garage, before delivery or after collection, and they have to be filtered out.
+  - Relationship establishment with Contract
 
 ## Challenges
-
+- Understanding the data with HFR providers
 
 ## Results
 After extensive discussions, it was decided that this project will create value when:
